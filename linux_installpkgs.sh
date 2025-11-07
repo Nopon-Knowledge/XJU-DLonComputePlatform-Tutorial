@@ -4,8 +4,8 @@
 # 可用环境变量：DEST=/path/to/wheelhouse  PIP=/path/to/venv/bin/pip
 set -euo pipefail
 
-DEST="${DEST:-$HOME/library/wheelhouse}"
-PIP="${PIP:-$HOME/venvs/test_env2/bin/pip}"   # 你的 venv pip（test_env1）
+DEST="${DEST:-$HOME/library/wheelhouse}" # 安装包所在路径
+PIP="${PIP:-$HOME/venvs/test_env/bin/pip}"   # 环境路径，由想要安装到哪个环境决定
 
 [ -x "$PIP" ] || { echo "[ERR] pip 不存在：$PIP"; exit 2; }
 [ -d "$DEST" ] || { echo "[ERR] 离线仓不存在：$DEST"; exit 3; }

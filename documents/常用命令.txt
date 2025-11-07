@@ -1,21 +1,8 @@
 
-
 jsub -m gpu01 -q gpu -gpgpu 1 -W 00:01 -o "$HOME/logs/output.%J" -e "$HOME/logs/error.%J" -cwd "$HOME/python_project/test" "$HOME/venvs/test_env1/bin/python" helloworld.py
 
 
-
 jsub -m gpu01 -q gpu -gpgpu 1 -W 00:01 -o "$HOME/logs/output.%J" -e "$HOME/logs/error.%J" nvidia-smi
-
-$HOME/python_project/test/venvs/bin/pip install numpy
-
-# 先准备一个目录放好 .whl
-pip install --no-index --find-links=./wheelhouse -r requirements.txt
-
-
-/storage/home/201400920/python_project/test/wheelhouse-py39-cu121-202510310844.zip
-/storage/home/201400920/library/wheelhouse
-~/python_project/test/run.sh
-
 
 PIP="$HOME/venvs/test_env/bin/pip"
 DEST="$HOME/library/wheelhouse"

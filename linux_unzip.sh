@@ -2,8 +2,8 @@
 # 解包 add_wheels_cuda121.zip 到统一的离线仓目录，并把所有 .whl 平铺过去
 set -euo pipefail
 
-ZIP="/storage/home/201400920/wheelhouse-py39-cu121-202511031722.zip"
-DEST="/storage/home/201400920/library/wheelhouse"
+ZIP="/storage/home/201400920/wheelhouse-py39-cu121-202511031722.zip" #带解压文件所在路径
+DEST="/storage/home/201400920/library/wheelhouse" #解压目标路径
 TMP="$(mktemp -d)"
 
 # 1) 前置检查

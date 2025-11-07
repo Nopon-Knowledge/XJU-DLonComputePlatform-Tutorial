@@ -1,6 +1,6 @@
 # 目标 Python 3.9
 $PYVER = 39
-$ADD = @(
+$ADD = @( #放入你想要的依赖包及版本
   'nvidia-curand-cu12==10.3.2.106'
 )
 New-Item -ItemType Directory add_wheels -Force | Out-Null
