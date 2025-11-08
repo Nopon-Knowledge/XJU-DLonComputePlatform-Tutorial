@@ -2,7 +2,8 @@
 
 本项目旨在帮助你在高算平台上运行深度学习项目，包含平台使用教程、环境搭建所需命令脚本、测试环境所用py文件。
 
-同时，个人能力有限，本项目需要大家共同帮助才能更加完善，如果您发现了错误或是有疑问，可以在issues里讨论
+同时，个人能力有限，并且从不同视角出发下都能顺畅理解的教程才是好教程，本项目需要大家共同帮助才能更加完善，如果您发现了错误或是有疑问
+，可以在issues里讨论。
 
 ## 一、远程连接高算平台
 
@@ -16,42 +17,60 @@ pycharm下载地址：https://www.jetbrains.com.cn/en-us/pycharm/
 
 第一步，进入pycharm项目页面后，点击右上角的设置按钮
 
-<img src="images/pycharm_settingicon.png" width="40%" alt="pycharm设置按钮">
+<p align="center">
+    <img src="images/pycharm_settingicon.png" width="40%" alt="pycharm设置按钮">
+</p>
 
 左边选择python，进入解释器，点击右方的添加解释器，选择“基于SSH”
 
-<img src="images/pycharm_addinterpreter.png" width="60%" alt="pycharm添加python解释器">
+<p align="center">
+    <img src="images/pycharm_addinterpreter.png" width="60%" alt="pycharm添加python解释器">
+</p>
 
 第一次进入，选择新建，主机处填写192.168.222.100，用户名处填写你的账户名，点击下一步
 
-<img src="images/pycharm_ssh_set1.png" width="60%" alt="pycharm添加ssh连接第一步">
+<p align="center">
+    <img src="images/pycharm_ssh_set1.png" width="60%" alt="pycharm添加ssh连接第一步">
+</p>
 
 输入密码，点击下一步
 
+<p align="center">
 <img src="images/pycharm_ssh_set2.png" width="60%" alt="pycharm添加ssh连接第二步">
+</p>
 
 自省页面，等待即可，自省结束“下一步”按钮会亮起，点击下一步
 
+<p align="center">
 <img src="images/pycharm_ssh_set3.png" width="60%" alt="pycharm添加ssh连接第三步">
+</p>
 
 远程项目设置页面，我们主要关注红框内的选项
 
+<p align="center">
 <img src="images/pycharm_ssh_set4.1.png" width="60%" alt="pycharm添加ssh连接第四步">
+</p>
 
 首先开始设置虚拟环境位置，点击右侧文件夹图标，进入如下页面
 
+<p align="center">
 <img src="images/pycharm_ssh_hostdir1.png" width="60%" alt="ssh查看远程主机">
+</p>
 
 进入Storage/Home/【你的账户名】，比如我的账户名是201400920，我就进入201400920文件夹，如下图所示
 
+<p align="center">
 <img src="images/pycharm_ssh_hostdir2.png" width="45%" alt="ssh查看远程主机">
 <img src="images/pycharm_ssh_hostdir3.png" width="45%" alt="ssh查看远程主机">
+</p>
 
 右键点击账户对应的文件夹，新建环境存放目录，我命名为venvs（即virtual environments），
 再右击venvs文件夹，新建一个目录，该目录命名为你想要的环境名，例如我现在想要的是一个用于测试的环境，
 我新建一个名为test_env的新目录，然后选择该目录，点击确定后完成。
 
+<p align="center">
 <img src="images/pycharm_ssh_hostvenvlocation.png" width="45%" alt="ssh查看远程主机 设置venvs路径">
+</p>
 
 之后我们选择基础解释器路径，点击省略号图标后进入远程主机根目录，依次进入并选择Storage/Software/anaconda3/bin/python3.9
 
@@ -61,11 +80,15 @@ pycharm下载地址：https://www.jetbrains.com.cn/en-us/pycharm/
 
 全部设置完之后点击右下角的“创建”按钮，等待其配置完成后，点击pycharm页面左下角的“终端”按钮，点击下拉箭头，选择刚刚设置好的远程终端，
 
+<p align="center">
 <img src="images/pycharm_terminal1.png" width="70%" alt="选择远程终端">
+</p>
 
 选择后进入如下终端页面，则SSH连接完成。
 
+<p align="center">
 <img src="images/pycharm_terminal2.png" width="70%" alt="远程终端连接成功">
+</p>
 
 ### 2、VS Code SSH连接远程服务器
 
@@ -73,19 +96,27 @@ VS Code下载地址：https://code.visualstudio.com/
 
 vs code远程连接首先需要在左方的Extension下载Remote Development插件，如下图所示：
 
+<p align="center">
 <img src="images/vscode_plugdownload.png" width="50%" alt="vscode下载远程插件">
+</p>
 
 安装完成后，点击左侧的远程资源管理器，选择远程（隧道/SSH），再点击SSH选项栏右侧的配置按钮，如下图所示：
 
+<p align="center">
 <img src="images/vscode_sshconfig1.png" width="30%" alt="vscode配置ssh">
+</p>
 
 点击后，上方会出现如下图所示的配置文件路径，点击进入
 
+<p align="center">
 <img src="images/vscode_sshconfig2png" width="50%" alt="vscode选择配置文件">
+</p>
 
 然后会显示如下图一般的配置文件
 
+<p align="center">
 <img src="images/vscode_sshconfig3.png" width="50%" alt="vscode配置文件">
+</p>
 
 将下面的ssh配置输入进去
    ```
@@ -96,11 +127,15 @@ vs code远程连接首先需要在左方的Extension下载Remote Development插�
    ```
 输入完成后，按ctrl+s或者左侧点击刷新按钮，SSH下会出现刚刚新建的SSH连接，点击箭头连接按钮，上方弹出窗口内选择Linux
 
+<p align="center">
 <img src="images/vscode_sshconfig4.png" width="30%" alt="vscode开始ssh连接">
+</p>
 
 进入如下图所示终端：输入yes，再输入你的密码
 
+<p align="center">
 <img src="images/vscode_terminal1.png" width="70%" alt="vscode终端连接1">
+</p>
 
 此时点击上方的 终端->新建终端，如果此时终端前缀显示远程服务器账户名@节点，则表示连接成功。
 
@@ -169,7 +204,9 @@ macos使用
    ```
 运行成功后，项目内应出现一个压缩包，如下图所示
 
+<p align="center">
 <img src="images/local_download_zip.png" width="50%" alt="本地下载后的压缩包">
+</p>
 
 右击该压缩包，选择部署，上传至远程服务器，上传成功后，运行[linux_unzip.sh](linux_unzip.sh)脚本解压缩，
 该脚本需要关注5、6行，分别为待解压文件所在路径和解压目标路径。（该操作也可以在web端的图形交互界面完成）
@@ -205,9 +242,9 @@ macos使用
    jsub -m gpu01 -q gpu -gpgpu 1 -W 00:01 -o "$HOME/logs/output.%J" -e "$HOME/logs/error.%J" -cwd "$HOME/python_project/test" "$HOME/venvs/test_env/bin/python" test_pytorch.py
    ```
 如果最终得到如下图所示的输出，则说明pytorch及cuda配置完成。
-
-<img src="待定" width="50%" alt="测试pytorch的运行结果 图片待补">
-
+<p align="center">
+    <img src="images/testpy.png" width="50%" alt="测试pytorch的运行结果">
+</p>
 
 
 
