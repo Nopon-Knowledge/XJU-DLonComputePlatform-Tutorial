@@ -97,7 +97,7 @@ VS Code下载地址：https://code.visualstudio.com/
 vs code远程连接首先需要在左方的Extension下载Remote Development插件，如下图所示：
 
 <p align="center">
-<img src="images/vscode_plugdownload.png" width="50%" alt="vscode下载远程插件">
+<img src="images/vscode_plugdownload.png" width="70%" alt="vscode下载远程插件">
 </p>
 
 安装完成后，点击左侧的远程资源管理器，选择远程（隧道/SSH），再点击SSH选项栏右侧的配置按钮，如下图所示：
@@ -134,7 +134,7 @@ vs code远程连接首先需要在左方的Extension下载Remote Development插�
 进入如下图所示终端：输入yes，再输入你的密码
 
 <p align="center">
-<img src="images/vscode_terminal1.png" width="70%" alt="vscode终端连接1">
+<img src="images/vscode_terminal1.png" width="90%" alt="vscode终端连接1">
 </p>
 
 此时点击上方的 终端->新建终端，如果此时终端前缀显示远程服务器账户名@节点，则表示连接成功。
@@ -243,7 +243,7 @@ macos使用
    ```
 如果最终得到如下图所示的输出，则说明pytorch及cuda配置完成。
 <p align="center">
-    <img src="images/testpy.png" width="50%" alt="测试pytorch的运行结果">
+    <img src="images/testpy.png" width="70%" alt="测试pytorch的运行结果">
 </p>
 
 
