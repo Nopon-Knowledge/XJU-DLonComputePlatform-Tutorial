@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="201400920@192.168.222.100:22 password (3)" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="xju-hcp" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
-      <paths name="201400920@192.168.222.100:22 password">
+      <paths name="xju-hcp">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/pycharm_project_732" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="201400920@192.168.222.100:22 password (2)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/storage/home/201400920/python_project/test" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="201400920@192.168.222.100:22 password (3)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/storage/home/201400920/python_project/test" local="$PROJECT_DIR$" />
+            <mapping deploy="/storage/home/402005/python_project/test" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

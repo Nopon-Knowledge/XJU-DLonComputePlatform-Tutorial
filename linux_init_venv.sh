@@ -5,7 +5,7 @@
 set -euo pipefail
 
 # ========= 可改参数（也支持环境变量或位置参数覆盖） =========
-VENV_DIR="${VENV_DIR:-$HOME/venvs/test_env}" #可以改为你想要的环境路径
+VENV_DIR="${VENV_DIR:-$HOME/venvs/unet_env}" #可以改为你想要的环境路径
 PYBASE="${PYBASE:-/storage/software/anaconda3/bin/python}" #选择python来源，该默认路径的python为3.9版本
 
 # 位置参数覆盖

@@ -5,7 +5,7 @@ set -euo pipefail
 # ===== 参数 =====
 PYVER=39   # Python 3.9 -> 39；3.10 -> 310；3.11 -> 311
 ADD=(
-  "nvidia-curand-cu12==10.3.2.106"
+  "packaging==25.0"
   # 需要的话继续往下加："packageA==x.y.z" "packageB==a.b.c"
 )
 

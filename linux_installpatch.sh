@@ -7,7 +7,7 @@
 #   PKG   默认 einops==0.7.0
 set -euo pipefail
 
-VENV="${VENV:-$HOME/venvs/test_env}" #环境路径
+VENV="${VENV:-$HOME/venvs/unet_env}" #环境路径
 PIP="${PIP:-$VENV/bin/pip}"
 DEST="${DEST:-$HOME/library/wheelhouse}" #安装包路径
 PKG="${PKG:-einops==0.7.0}" #要安装的依赖包
